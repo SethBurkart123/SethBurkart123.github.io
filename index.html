@@ -1,1 +1,420 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="./favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Portfolio"/><link rel="apple-touch-icon" href="./logo192.png"/><link rel="manifest" href="./manifest.json"/><title>Seth Burkart</title><script defer="defer" src="./static/js/main.5239ce22.js"></script><link href="./static/css/main.c1af1e63.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Seth Burkart</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="./css/vendors/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/vendors/swiper-bundle.min.css" />
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollToPlugin.min.js"></script>
+
+</head>
+
+<body class="antialiased tracking-tight font-inter bg-slate-900 text-slate-200">
+
+    <!-- Page wrapper -->
+    <div class="flex flex-col min-h-screen overflow-hidden">
+
+        <!-- Page content -->
+        <main class="grow">
+            
+            <!-- Hero -->
+            <section class="relative">
+
+                <!-- Illustration -->
+                <div class="absolute hidden -translate-x-1/2 pointer-events-none md:block left-1/2 -z-10" aria-hidden="true">
+                    <img src="./images/hero-illustration.svg" class="max-w-none" width="1440" height="1265" alt="Hero Illustration">                    
+                </div>
+
+                <div class="relative max-w-6xl px-4 mx-auto sm:px-6">
+                    <div class="pt-32 md:pt-40">
+
+                        <!-- Hero content -->
+                        <div class="max-w-3xl mx-auto text-center">
+
+                            <h1 class="mb-6 text-4xl sm:text-6xl h1 font-hkgrotesk" data-aos="fade-up">I know. <br /> Video editing is hard</h1>
+                            <p class="mb-10 text-xl text-slate-500" data-aos="fade-up" data-aos-delay="100">(Don't worry) I can help. With over 5 years editing experience I can do anything you like: typography, motion tracking, green screening. You name it.                            </p>
+                            <div class="max-w-xs mx-auto space-y-4 sm:max-w-none sm:inline-flex sm:justify-center sm:space-y-0 sm:space-x-4" data-aos="fade-up" data-aos-delay="200">
+                                <div>
+                                    <a class="w-full text-white bg-blue-500 shadow-sm btn hover:bg-blue-600 group" onClick="gsap.to(window, {scrollTo:'#contact', duration:1.5, ease:'power1.inOut'});">
+                                        Contact Me <span class="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Hero image -->
+                        <div class="pt-16 md:pt-20" data-aos="fade-up" data-aos-delay="300">
+                            <iframe class="youtube" src="https://www.youtube.com/embed/oFtIIDcZo80" title="Demo Reel 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            <section>
+                <div class="max-w-6xl px-4 mx-auto sm:px-6">
+                    <div class="py-12 border-b md:py-20 border-slate-800">
+
+                        <div class="grid items-start max-w-sm gap-8 mx-auto md:grid-cols-3 lg:gap-16 md:max-w-none">
+                        
+                            <article class="flex flex-col items-center h-full text-center" data-aos="fade-up">
+                                <header class="mb-3">
+                                    <img class="inline-flex rounded-full" src="./images/testimonial-01.jpg" width="40" height="40" alt="Testimonial 01" />
+                                    <div class="mt-4">
+                                        <div class="flex space-x-1">
+                                            <button>
+                                                <span class="sr-only">1 star</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">2 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">3 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">4 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">5 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="mb-3 grow">
+                                    <p class="italic text-slate-500">"The only tool that has the technology to meet our unique and complex needs."</p>
+                                </div>
+                                <footer class="text-sm font-medium text-slate-500">
+                                    <a class="transition duration-150 ease-in-out text-slate-300 hover:text-white" href="#0">Trustpilot</a> - <span class="text-blue-500">4.9/5</span>
+                                </footer>
+                            </article>
+                        
+                            <article class="flex flex-col items-center h-full text-center" data-aos="fade-up" data-aos-delay="200">
+                                <header class="mb-3">
+                                    <img class="inline-flex rounded-full" src="./images/testimonial-02.jpg" width="40" height="40" alt="Testimonial 02" />
+                                    <div class="mt-4">
+                                        <div class="flex space-x-1">
+                                            <button>
+                                                <span class="sr-only">1 star</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">2 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">3 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">4 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">5 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="mb-3 grow">
+                                    <p class="italic text-slate-500">"The only tool that has the technology to meet our unique and complex needs."</p>
+                                </div>
+                                <footer class="text-sm font-medium text-slate-500">
+                                    <a class="transition duration-150 ease-in-out text-slate-300 hover:text-white" href="#0">Capterra</a> - <span class="text-blue-500">4.7/5</span>
+                                </footer>
+                            </article>
+
+                            <article class="flex flex-col items-center h-full text-center" data-aos="fade-up" data-aos-delay="400">
+                                <header class="mb-3">
+                                    <img class="inline-flex rounded-full" src="./images/testimonial-03.jpg" width="40" height="40" alt="Testimonial 03" />
+                                    <div class="mt-4">
+                                        <div class="flex space-x-1">
+                                            <button>
+                                                <span class="sr-only">1 star</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">2 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">3 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">4 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <span class="sr-only">5 stars</span>
+                                                <svg class="w-4 h-4 fill-amber-400" viewBox="0 0 16 16">
+                                                    <path d="M10 5.934L8 0 6 5.934H0l4.89 3.954L2.968 16 8 12.223 13.032 16 11.11 9.888 16 5.934z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </header>
+                                <div class="mb-3 grow">
+                                    <p class="italic text-slate-500">"The only tool that has the technology to meet our unique and complex needs."</p>
+                                </div>
+                                <footer class="text-sm font-medium text-slate-500">
+                                    <a class="transition duration-150 ease-in-out text-slate-300 hover:text-white" href="#0">G2</a> - <span class="text-blue-500">4.9/5</span>
+                                </footer>
+                            </article>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </section -->
+            
+            <!-- Features -->
+            <section class="relative">
+
+                <!-- Bg illustration -->
+                <div class="absolute -mt-20 -translate-x-1/2 pointer-events-none left-1/2 -z-10" aria-hidden="true">
+                    <img src="./images/features-illustration.svg" class="max-w-none" width="1440" height="440" alt="Illustration">
+                </div>
+
+                <div class="max-w-6xl px-4 mx-auto sm:px-6">
+                    <div class="py-12 md:py-20">
+            
+                        <!-- Section header -->
+                        <div class="max-w-3xl pb-12 mx-auto text-center md:pb-20">
+                            <h2 class="mb-4 h2 font-hkgrotesk">Extensive skillset</h2>
+                            <div class="max-w-2xl mx-auto">
+                            </div>
+                        </div>
+
+                        <!-- Carousel built with Swiper.js [https://swiperjs.com/] -->
+                        <!-- * Initialized in src/js/main.js -->
+                        <!-- * Custom styles in src/css/additional-styles/theme.scss -->
+                        <div class="carousel swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Carousel items -->
+                                <div class="flex flex-col h-auto p-6 rounded swiper-slide bg-slate-800">
+                                    <img class="mb-3" src="./images/features-icon-01.svg" width="56" height="56" alt="Icon 01">
+                                    <div class="grow">
+                                        <div class="text-xl font-bold font-hkgrotesk">Collaboration</div>
+                                        <div class="mb-3 text-slate-500">Keeping open communication is my priority. It helps you get the results you want faster.</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col h-auto p-6 rounded swiper-slide bg-slate-800">
+                                    <img class="mb-3" src="./images/features-icon-02.svg" width="56" height="56" alt="Icon 02">
+                                    <div class="grow">
+                                        <div class="text-xl font-bold font-hkgrotesk">Storytelling</div>
+                                        <div class="mb-3 text-slate-500">I can provide visual storytelling which is the key to wonderful content found on platforms such as YouTube and Netflix.</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col h-auto p-6 rounded swiper-slide bg-slate-800">
+                                    <img class="mb-3" src="./images/features-icon-03.svg" width="56" height="56" alt="Icon 03">
+                                    <div class="grow">
+                                        <div class="text-xl font-bold font-hkgrotesk">Motion Graphics</div>
+                                        <div class="mb-3 text-slate-500">I can provide motion graphics to enhance your videos. Whether it be an explainer being shown visually or movement displayed on a map.</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col h-auto p-6 rounded swiper-slide bg-slate-800">
+                                    <img class="mb-3" src="./images/features-icon-04.svg" width="56" height="56" alt="Icon 04">
+                                    <div class="grow">
+                                        <div class="text-xl font-bold font-hkgrotesk">Social Media</div>
+                                        <div class="mb-3 text-slate-500">I aim to produce content designed specifically for a videos specific audience for increased viewership.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arrows -->
+                        <div class="flex justify-end mt-12 space-x-4">
+                            <button class="relative z-20 flex items-center justify-center transition duration-150 ease-in-out border rounded-full carousel-prev w-14 h-14 group border-slate-700 bg-slate-800 hover:bg-slate-700">
+                                <span class="sr-only">Previous</span>
+                                <svg class="w-4 h-4 transition duration-150 ease-in-out fill-slate-400" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.7 14.7l1.4-1.4L3.8 9H16V7H3.8l4.3-4.3-1.4-1.4L0 8z" />
+                                </svg>
+                            </button>
+                            <button class="relative z-20 flex items-center justify-center transition duration-150 ease-in-out border rounded-full carousel-next w-14 h-14 group border-slate-700 bg-slate-800 hover:bg-slate-700">
+                                <span class="sr-only">Next</span>
+                                <svg class="w-4 h-4 transition duration-150 ease-in-out fill-slate-400" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.3 14.7l-1.4-1.4L12.2 9H0V7h12.2L7.9 2.7l1.4-1.4L16 8z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+            <div id="contact"></div>
+            <!-- Features #2 -->
+            <section class="relative border-t border-slate-800">
+
+                <!-- Bg gradient: top -->
+                <div class="absolute top-0 left-0 right-0 bg-gradient-to-b from-slate-800 to-transparent opacity-25 h-[25rem] pointer-events-none -z-10" aria-hidden="true"></div>
+            
+                <!-- Illustration -->
+                <div class="absolute top-0 hidden mt-40 -translate-x-1/2 pointer-events-none lg:block left-1/2 -z-10" aria-hidden="true">
+                    <img src="./images/features-illustration-02.svg" class="max-w-none" width="1440" height="453" alt="Features 02 Illustration">
+                </div>
+            
+                <div class="max-w-6xl px-4 mx-auto sm:px-6">
+                    <div class="py-12 md:py-20">
+                    </div>
+                </div>
+            </section>
+
+ 
+            <section class="relative">
+                
+                <!-- Illustration -->
+                <div class="absolute bottom-0 hidden -mb-24 -translate-x-1/2 pointer-events-none lg:block left-1/2 -z-10" aria-hidden="true">
+                    <img src="./images/pricing-illustration.svg" class="max-w-none" width="1440" height="440" alt="Pricing Illustration">
+                </div>
+
+                <!-- Section header -->
+                <div class="max-w-3xl pb-12 mx-auto text-center md:pb-20" data-aos="fade-up">
+                    <h2 class="h2 font-hkgrotesk">Contact</h2>
+                </div>
+
+                <form class="flex flex-col form" action="https://formsubmit.co/Sethburkart7@gmail.com" method="POST">
+                    <div class="flex w-full gap-12 px-16">
+                        <input class="flex-1 px-4 py-2 my-4 text-xl border-none rounded-lg font-extralight bg-white/10 backdrop-blur-lg placeholder-slate-400" placeholder="Name" type="text" name="name" required>
+                        <input class="flex-1 px-4 py-2 my-4 text-xl border-none rounded-lg font-extralight bg-white/10 backdrop-blur-lg placeholder-slate-400" placeholder="email@example.com" type="email" name="email" required>
+                    </div>
+                    <textarea placeholder="Message" class="flex-1 px-4 py-2 mx-16 my-4 text-xl border-none rounded-lg font-extralight bg-white/10 backdrop-blur-lg placeholder-slate-400" type="text"></textarea>
+                    <button class="w-1/6 px-4 py-2 mx-auto my-8 transition duration-300 bg-blue-700 rounded-lg hover:bg-blue-800" type="submit">Send</button>
+               </form>
+            </section>
+
+            <!-- Single testimonial -->
+            <section class="my-32" data-aos="fade-up">
+                <div class="max-w-6xl px-4 mx-auto sm:px-6">
+                    <div class="max-w-3xl mx-auto">
+
+                        <div class="text-center">
+                            <div class="relative inline-flex mb-4">
+                                <img class="inline-flex rounded-full" src="./images/testimonial-04.jpg" width="64" height="64" alt="Testimonial 04" />
+                                <svg class="absolute top-0 -ml-2 left-full fill-blue-500" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 18h6.196L9.448 0H3.252L0 18Zm10.552 0h6.196L20 0h-6.196l-3.252 18Z"  />
+                                </svg>
+                            </div>
+                            <div class="mb-3 text-xl italic text-slate-500">
+                                "Seth is a great video editor and is very professional. He is very easy to work with and is very creative. I would recommend him to anyone looking for a video editor."
+                            </div>
+                            <div class="font-medium text-slate-500">
+                                <a class="text-slate-300">Mirta Jiang</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- CTA -->
+            <section class="relative border-t border-slate-800">
+
+                <!-- Bg gradient: top -->
+                <div class="absolute top-0 left-0 right-0 bg-gradient-to-b from-slate-800 to-transparent opacity-25 h-[25rem] pointer-events-none -z-10" aria-hidden="true"></div>
+            
+                <!-- Illustration -->
+                <div class="absolute top-0 hidden -mt-8 -translate-x-1/2 pointer-events-none lg:block left-1/2 -z-10" aria-hidden="true">
+                    <img src="./images/cta-illustration.svg" class="max-w-none" width="1440" height="440" alt="Features 01 Illustration">
+                </div>
+            
+                <div class="max-w-6xl px-4 mx-auto sm:px-6">
+                    <div class="py-12 md:py-20">
+            
+                        <!-- Section header -->
+                        <div class="max-w-3xl pb-12 mx-auto text-center md:pb-20" data-aos="fade-up">
+                            <h2 class="h2 font-hkgrotesk">FAQs</h2>
+                        </div>
+
+            
+                        <!-- Columns -->
+                        <div class="space-y-8 md:flex md:space-x-12 md:space-y-0">
+
+                            <!-- Column -->
+                            <div class="grid w-full grid-flow-row grid-cols-2 gap-20 mx-auto md:w-1/2">
+
+                                <!-- Item -->
+                                <div class="space-y-2">
+                                    <h4 class="text-xl font-medium font-hkgrotesk">How much do you charge?</h4>
+                                    <p class="text-slate-500">I charge a different amount based on every project, so that you get high value content for your money every time.</p>
+                                </div>
+
+                                <!-- Item -->
+                                <div class="space-y-2">
+                                    <h4 class="text-xl font-medium font-hkgrotesk">Do you provide stock video and images?</h4>
+                                    <p class="text-slate-500">Yes! I use stock video and images that are fully licensed for personal and commercial use.</p>
+                                </div>
+
+                                <!-- Item -->
+                                <div class="space-y-2">
+                                    <h4 class="text-xl font-medium font-hkgrotesk">How is the pricing determined?</h4>
+                                    <p class="text-slate-500">I determine my pricing based on complexity of the project.</p>
+                                </div>
+                            
+                                <!-- Item -->
+                                <div class="space-y-2">
+                                    <h4 class="text-xl font-medium font-hkgrotesk">What about music and sound effects?</h4>
+                                    <p class="text-slate-500">Music and sound effects are included for any video that you get edited by me. I provide both personal and commercial licensing for your videos.</p>
+                                </div>                            
+                            </div>
+
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+
+    </div>
+
+    <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <script src="./js/vendors/aos.js"></script>
+    <script src="./js/vendors/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
