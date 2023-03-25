@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="astro-J7PV25F6">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Astro v2.1.2">
+    <title>Seth Burkart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="/_astro/index.33e4b4a8.css" /></head>
+  <body class="w-screen h-screen overflow-hidden text-white bg-black astro-J7PV25F6">
+    <div>
+  <div style="top:-80px; left:-80px;" class="cursor cursor-dot"></div>
+  <div style="top: -80px; left:-80px;" class="cursor cursor-shadow disabled"></div>
+  <img class="svg-cursor h-4 w-auto" src="/cursor.svg">
+</div>
+
+<script>
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorShadow = document.querySelector('.cursor-shadow');
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  requestAnimationFrame(updateCursor(e));
+});
+function updateCursor(e) {
+  cursorShadow.setAttribute("style", "top: " + (mouseY) + "px; left: " + (mouseX) + "px;")
+  cursorDot.setAttribute("style", "top: " + (mouseY) + "px; left: " + (mouseX) + "px;")
+  cursorShadow.classList.remove("disabled");
+  const hideCursor = document.querySelector('.hide-cursor');
+  const gameContainer = document.querySelector('#gameContainer');
+  const svgCursor = document.querySelector('.svg-cursor');
+
+  if (hideCursor && hideCursor.contains(e.target)) {
+    // set cursor opacity to 0
+    cursorDot.classList.add("cursor-hidden");
+    cursorShadow.classList.add("cursor-hidden");
+  } else {
+    cursorDot.classList.remove("cursor-hidden");
+    cursorShadow.classList.remove("cursor-hidden");
+  }
+  if (gameContainer && gameContainer.contains(e.target)) {
+    cursorDot.style.display = 'none';
+    cursorShadow.style.display = 'none';
+    svgCursor.style.display = 'block';
+    svgCursor.style.top = mouseY + 'px';
+    svgCursor.style.left = mouseX + 'px';
+  } else {
+    cursorDot.style.display = 'block';
+    cursorShadow.style.display = 'block';
+    svgCursor.style.display = 'none';
+  }
+
+}
+
+document.addEventListener('mousedown', () => {
+  cursorShadow.classList.add("expand");
+})
+document.addEventListener('mouseup', () => {
+  cursorShadow.classList.remove("expand");
+})
+</script>
+    <div data-scroll-container class="overflow-y-scroll astro-J7PV25F6">
+      <div class="place-items-center grid h-screen relative astro-J7PV25F6">
+        <!--div class="fixed top-1/4 left-1/2 text-xs w-4 h-4 rounded-full bg-blue-400 z-50"></div--><div class="text-container astro-ZFUFVVIG">
+  <h1 class="text-8xl flex gap-4 transform py-2 my-0.5 px-4 rounded-xl overflow-clip astro-ZFUFVVIG">
+    <span data-scroll data-scroll-speed="3" class="white-text-in white-glow astro-ZFUFVVIG">
+      Hello,
+    </span>
+    <span data-scroll data-scroll-speed="-3" data-scroll-delay="0.15" class="coloured-text-in astro-ZFUFVVIG">
+      I'm Seth
+    </span>
+  </h1>
+</div>
+        <p data-scroll data-scroll-speed="-4" scroll-hide class="bounce astro-7IVJ2O3M">
+  <span class="astro-7IVJ2O3M">S</span>
+  <span class="astro-7IVJ2O3M">c</span>
+  <span class="astro-7IVJ2O3M">r</span>
+  <span class="astro-7IVJ2O3M">o</span>
+  <span class="astro-7IVJ2O3M">l</span>
+  <span class="astro-7IVJ2O3M">l</span>
+  <span class="astro-7IVJ2O3M"> </span>
+  <span class="astro-7IVJ2O3M">D</span>
+  <span class="astro-7IVJ2O3M">o</span>
+  <span class="astro-7IVJ2O3M">w</span>
+  <span class="astro-7IVJ2O3M">n</span>
+  <br class="astro-7IVJ2O3M">
+  <span class="astro-7IVJ2O3M">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 astro-7IVJ2O3M">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" class="astro-7IVJ2O3M"></path>
+    </svg>
+  </span>
+</p>
+
+<script>
+</script>
+      </div>
+      <div class="flex justify-center px-[10%] pb-[10%] w-screen astro-J7PV25F6">
+        <iframe width="1237" height="686" class="cursor-pointer hide-cursor z-50 rounded-lg astro-J7PV25F6" src="https://www.youtube.com/embed/oFtIIDcZo80" title="Demo Reel 2022" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+        <!--ScrollingAbilities /-->
+      <!--div data-scroll-container class="h-screen bg-stone-900">
+        <div class="flex gap-4" data-scroll data-scroll-sticky data-scroll-target="#sticky-element">
+          <h2 id="sticky-element" data-scroll class="text-white font-bold text-8xl">I do</h2>
+          <div class="overflow-clip">
+            <h2 class="font-bold text-8xl highlight bg-clip-text">
+              <span video-editing-title>Video Editing</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div id="test" class="h-screen bg-stone-800"></div-->
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+<script>
+
+/*
+// Video editing slide
+gsap.fromTo("[scroll-hide]",{
+  opacity: 0,
+  ease: "power4.out",
+  duration: 3,
+  markers: false,
+  scrollTrigger: {
+    trigger: "[scroll-hide]",
+    start: "top 80%",
+    end: "bottom 80%",
+    scrub: true,
+  }
+});*/
+
+</script>
+
+<script>
+
+  var scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    getDirection: true,
+    lerp: 0.05,
+    allowTouchMove: true,
+    smartphone: {
+      smooth: true,
+    },
+  });
+
+  const iframe = document.querySelector('iframe');
+  iframe.setAttribute('scrolling', 'no');
+
+/*
+  gsap.registerPlugin('ScrollTrigger');
+  ScrollTrigger.defaults({
+    scroller: "[data-scroll-container]",
+    markers: true,
+  });
+
+  ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+    scrollTop(value) {
+      return arguments.length
+        ? scroll.scrollTo(value, 0, 0)
+        : scroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+    },
+    pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
+  });
+
+  ScrollTrigger.addEventListener("refresh", () => scroll.update());
+  ScrollTrigger.refresh();*/
+
+  scroll.on("scroll", () => {
+    ScrollTrigger.update();
+    document.documentElement.setAttribute("data-scrolling", instance.direction);
+
+    const scrollIndicator = document.querySelector(".bounce");
+    scrollIndicator.classList.add("hide");
+  });
+</script>
+
+</body></html>

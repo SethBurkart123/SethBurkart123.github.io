@@ -1,0 +1,73 @@
+.white-text-in {
+  @apply block;
+  color: transparent;
+  background: linear-gradient(
+    250deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 1) 60%
+  );
+  background-position: -470px 0px;
+  animation: white-text-in 2s ease-in forwards;
+  animation-delay: 0s, 2s;
+  background-repeat: no-repeat;
+  background-clip: text !important;
+  background-size: 250%;
+  user-select: none;
+}
+
+@keyframes white-text-in {
+  0% {
+    background-position: -470px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+.transform {
+  animation: translate 3s cubic-bezier(0.6, 0, 0.22, 0.95) forwards;
+  animation-delay: 2s;
+  transform: translateX(30%);
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.coloured-text-in {
+  @apply block;
+  user-select: none;
+  background: linear-gradient(
+    30deg,
+    rgba(37, 99, 235, 1) 0%,
+    rgba(192, 132, 252, 1) 45%,
+    rgba(192, 132, 252, 0) 50%
+  );
+  /*background: linear-gradient(
+    250deg,
+    rgba(255, 255, 255, 0) 45%,
+    rgba(255, 255, 255, 1) 60%
+  );*/
+  background-position: -510px 0px;
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari/Chrome */
+  -moz-background-clip: text; /* Firefox */
+  color: transparent;
+  animation: coloured-text-in 2s cubic-bezier(0.6, 0, 0.22, 0.95) forwards;
+  animation-delay: 3s;
+  background-size: 250%;
+}
+
+@keyframes coloured-text-in {
+  0% {
+    background-position: -510px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
