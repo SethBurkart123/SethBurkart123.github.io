@@ -61,13 +61,16 @@
   animation: coloured-text-in 2s cubic-bezier(0.6, 0, 0.22, 0.95) forwards;
   animation-delay: 3s;
   background-size: 250%;
+  opacity: 0;
 }
 
 @keyframes coloured-text-in {
   0% {
     background-position: -510px 0px;
+    opacity: 0;
   }
   100% {
     background-position: 0px 0px;
+    opacity: 100;
   }
 }
